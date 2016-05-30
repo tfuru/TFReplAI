@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (3.4.0)
+  - FBSnapshotTestCase (2.1.0):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
+  - FBSnapshotTestCase/Core (2.1.0)
+  - FBSnapshotTestCase/SwiftSupport (2.1.0):
+    - FBSnapshotTestCase/Core
+  - Nimble (3.2.0)
+  - Nimble-Snapshots (4.1.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (0.9.2)
+  - TFReplAI (0.1.0):
+    - Alamofire (~> 3.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - FBSnapshotTestCase
+  - Nimble (~> 3.0)
+  - Nimble-Snapshots
+  - Quick (~> 0.8)
+  - TFReplAI (from `../`)
+
+EXTERNAL SOURCES:
+  TFReplAI:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+  TFReplAI: c38f197b62be8d338dd910791f656dbfdaaef73e
+
+COCOAPODS: 0.39.0

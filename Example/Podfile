@@ -2,9 +2,10 @@ use_frameworks!
 
 target 'TFReplAI_Example' do
   pod 'TFReplAI', :path => '../'
+  pod 'Alamofire', '~> 3.3'
 
   target 'TFReplAI_Tests' do
-    inherit! :search_paths
+    #inherit! :search_paths
 
     pod 'Quick', '~> 0.8'
   pod 'Nimble', '~> 3.0'

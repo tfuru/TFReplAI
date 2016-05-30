@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TFReplAI_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,57 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-lx-VAM">
+                                <rect key="frame" x="245" y="266" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MF1-v4-Pn1"/>
+                                    <constraint firstAttribute="width" constant="110" id="bdi-iY-Hhc"/>
+                                </constraints>
+                                <state key="normal" title="Registration"/>
+                                <connections>
+                                    <action selector="btnRegistrationClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b7A-zr-Xtf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fc-2s-hql">
+                                <rect key="frame" x="245" y="304" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RZv-2P-fdH"/>
+                                    <constraint firstAttribute="width" constant="110" id="Sjk-Yc-uf2"/>
+                                </constraints>
+                                <state key="normal" title="Dialogue Init"/>
+                                <connections>
+                                    <action selector="btnDialogueInitClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JH8-Vg-gTH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULi-01-jNX">
+                                <rect key="frame" x="245" y="342" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="EAl-ho-fNb"/>
+                                    <constraint firstAttribute="width" constant="110" id="FYr-yf-TsI"/>
+                                    <constraint firstAttribute="height" constant="30" id="YAG-8Q-aRk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="hZd-yA-Hus"/>
+                                </constraints>
+                                <state key="normal" title="Dialogue"/>
+                                <connections>
+                                    <action selector="btnDialogueClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p95-ei-fgJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YTy-lx-VAM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="246" id="GSm-Cd-qFY"/>
+                            <constraint firstItem="YTy-lx-VAM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JcI-aU-934"/>
+                            <constraint firstItem="8Fc-2s-hql" firstAttribute="top" secondItem="YTy-lx-VAM" secondAttribute="bottom" constant="8" id="T7r-bu-4RI"/>
+                            <constraint firstItem="8Fc-2s-hql" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="TUr-cy-fb4"/>
+                            <constraint firstItem="ULi-01-jNX" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="sxK-lh-kG5"/>
+                            <constraint firstItem="ULi-01-jNX" firstAttribute="top" secondItem="8Fc-2s-hql" secondAttribute="bottom" constant="8" id="wYk-05-Akg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="429" y="307"/>
         </scene>
     </scenes>
 </document>
