@@ -1,8 +1,10 @@
+platform :ios, “9.0”
 use_frameworks!
+inhibit_all_warnings!
 
 target 'TFReplAI_Example' do
   pod 'TFReplAI', :path => '../'
-  pod 'Alamofire', '~> 3.3'
+  pod 'Alamofire', '~> 3.4'
 
   target 'TFReplAI_Tests' do
     #inherit! :search_paths

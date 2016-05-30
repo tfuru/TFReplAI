@@ -15,7 +15,7 @@ PODS:
     - Alamofire (~> 3.3)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.3)
+  - Alamofire (~> 3.4)
   - FBSnapshotTestCase
   - Nimble (~> 3.0)
   - Nimble-Snapshots
@@ -32,6 +32,6 @@ SPEC CHECKSUMS:
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
   Nimble-Snapshots: 2da4d2ec829b458d6886c06812c52493fce284c9
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
-  TFReplAI: c38f197b62be8d338dd910791f656dbfdaaef73e
+  TFReplAI: ad97b36ed1120fc4cf63502b4bf4eda548cb982d
 
 COCOAPODS: 0.39.0
