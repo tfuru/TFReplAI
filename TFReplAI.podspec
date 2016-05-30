@@ -24,11 +24,11 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/tfuru/TFReplAI'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'tfuru' => 't_sakura@m1.ffn.ne.jp' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/TFReplAI.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'tfuru' => 't_furu@tf-web.jp' }
+  s.source           = { :git => 'https://github.com/tfuru/TFReplAI.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/t_furu'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'TFReplAI/Classes/**/*'
   
