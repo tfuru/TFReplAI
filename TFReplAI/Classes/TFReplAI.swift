@@ -117,12 +117,11 @@ public class TFReplAI {
         
         var initTalkingFlagStr:String = "false"
         var voiceTextStr = voiceText
-        var initTopicIdStr = initTopicId
+        let initTopicIdStr = initTopicId
         if initTalkingFlag {
             //はじめまして
             voiceTextStr = "init"
             initTalkingFlagStr = "true"
-            initTopicIdStr = (self.settings?.objectForKey("initTopicId") as? String)!
         }
         //print("initTalkingFlagStr:\(initTalkingFlagStr)")
         
@@ -147,7 +146,7 @@ public class TFReplAI {
             .responseJSON { response in
                 if let json = response.result.value as? NSDictionary {
                     //サーバがレスポンスを送信した時刻
-                    let serverSendTime = (json.objectForKey("serverSendTime") as? String)!
+                    //let serverSendTime = (json.objectForKey("serverSendTime") as? String)!
 
                     //最後にレスポンスを受信した時刻を更新
                     self.appRecvTime = self.dateToFormatString("yyyy/MM/dd HH:mm:ss", date: NSDate(), locale: "ja_JP")

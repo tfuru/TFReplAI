@@ -4,8 +4,6 @@
 <dict>
 	<key>botId</key>
 	<string></string>
-	<key>initTopicId</key>
-	<string></string>
 	<key>apiKey</key>
 	<string></string>
 </dict>

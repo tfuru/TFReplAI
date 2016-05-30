@@ -22,7 +22,7 @@ pod "TFReplAI"
 
 ## Author
 
-tfuru, t_sakura@m1.ffn.ne.jp
+tfuru
 
 ## License
 
